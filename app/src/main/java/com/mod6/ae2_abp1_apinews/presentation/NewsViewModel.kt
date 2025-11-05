@@ -11,20 +11,20 @@ import kotlinx.coroutines.launch
 // ViewModel maneja la lógica de la UI y expone los datos via LiveData
 class NewsViewModel(private val repository: NewsRepository) : ViewModel() {
 
-    // LiveData que expone la lista de noticias a la Activity (UI)
+    // LiveData: Expone la lista de noticias a la Activity (UI)
     private val _articles = MutableLiveData<List<Article>>()
     val articles: LiveData<List<Article>> = _articles
 
-    // LiveData para manejar el estado de carga
+    // LiveData: Maneja el estado de carga
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> = _isLoading
 
-    // LiveData para manejar mensajes de error
+    // LiveData: Maneja mensajes de error
     private val _errorMessage = MutableLiveData<String>()
     val errorMessage: LiveData<String> = _errorMessage
 
     init {
-        // Cargar noticias automáticamente al iniciar
+        // Carga las noticias al iniciar
         fetchNews()
     }
 

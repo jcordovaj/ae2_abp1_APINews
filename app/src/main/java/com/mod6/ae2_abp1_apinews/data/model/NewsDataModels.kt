@@ -2,7 +2,7 @@ package com.mod6.ae2_abp1_apinews.data.model
 
 import com.google.gson.annotations.SerializedName
 
-// 1. Modelo de Dominio (para la UI) - Simple y limpio.
+// Modelo de Dominio
 data class Article(
     val title: String,
     val description: String?,
@@ -11,13 +11,13 @@ data class Article(
     val sourceName: String
 )
 
-// 2. Data Transfer Object (DTO) - Representa un artículo en la respuesta JSON de la API.
+// Data Transfer Object (DTO), respuesta JSON de la API.
 
-// Objeto de Transferencia de Datos (DTO) de la Fuente
+// DTO: Source (Fuente)
 data class SourceDto(
     @SerializedName("name") val name: String?
 )
-
+// DTO: Article (Artículo)
 data class ArticleDto(
     @SerializedName("source") val source: SourceDto?,
     @SerializedName("title") val title: String?,
@@ -37,7 +37,7 @@ data class ArticleDto(
     }
 }
 
-// 3. Respuesta de la API (Contenedor principal)
+// Response de la API
 data class NewsResponse(
     @SerializedName("status") val status: String,
     @SerializedName("totalResults") val totalResults: Int,

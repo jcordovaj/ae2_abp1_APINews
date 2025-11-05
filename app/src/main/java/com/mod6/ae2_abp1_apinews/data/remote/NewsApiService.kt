@@ -6,8 +6,6 @@ import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-// La URL base es: https://newsapi.org/v2/
-
 interface NewsApiService {
     @GET("top-headlines")
     suspend fun getTopHeadlines(
@@ -16,10 +14,8 @@ interface NewsApiService {
     ): Response<NewsResponse>
 }
 
-// Singleton para configurar Retrofit
+// Patrón Singleton para configurar Retrofit
 object RetrofitClient {
-    //private const val BASE_URL = "https://newsapi.org/v2/"
-
     val apiService: NewsApiService by lazy {
         // Configuramos Retrofit
         val retrofit = retrofit2.Retrofit.Builder()
