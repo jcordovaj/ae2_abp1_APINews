@@ -1,4 +1,4 @@
-# 🚀 MOD6 AE2-AB1: Pelotillehue News - (APIRest + Retrofit + MVVM)
+# 🚀 MOD6 AE2-ABP1: Pelotillehue News - (APIRest + Retrofit + MVVM)
 
 <p float="center">
   <img src="scrapbook/perasconmanzanas_icon.png" alt="Logo" width="200"/>
@@ -92,7 +92,7 @@ El flujo de la aplicación se centra en el consumo y la presentación de datos r
 
 1. Inicio y Carga: La aplicación inicia en la MainActivity / NewsFragment . El ViewModel lanza automáticamente una solicitud a la API para cargar los titulares principales. Se muestra un Spinner o barra de progreso (observando viewModel.isLoading ).Visualización: Una vez recibida la respuesta, el RecyclerView se llena con tarjetas de noticias.
 2. Interacción de Búsqueda/Filtrado: El usuario ingresa un término o selecciona un filtro. Esto dispara el método fetchNews(query) en el ViewModel, iniciando un nuevo ciclo de solicitud/respuesta de la API.
-3. Manejo de Errores: Si la API retorna un código de error (ej. 404 o 500) o si hay un fallo de red, el LiveData`<errorMsg>` se actualiza, y la UI muestra un mensaje informativo al usuario en lugar del feed.
+3. Manejo de Errores: Si la API retorna un código de error (ej. 404 o 500) o si hay un fallo de red, el LiveData `<errorMsg>` se actualiza, y la UI muestra un mensaje informativo al usuario en lugar del feed.
 
 ---
 
