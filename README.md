@@ -104,7 +104,7 @@ El flujo de la aplicación se centra en el consumo y la presentación de datos r
             <img src="scrapbook/AppInstalada.png" alt="Icono App" width="200"/>
         </td>
         <td align="center" width="33%">
-            <img src="scrapbook/Lanzamiento.png" alt="Al lanzar la app" width="200"/>
+            <img src="scrapbook/lanzamiento.png" alt="Al lanzar la app" width="200"/>
         </td>
         <td align="center" width="33%">
             <img src="scrapbook/Lista.png" alt="Pantalla bienvenida" width="200"/>
