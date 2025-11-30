@@ -123,7 +123,7 @@ El flujo de la aplicación se centra en el consumo y la presentación de datos r
             <img src="scrapbook/noticia2.png" alt="Selector de fecha" width="200"/>
         </td>
         <td align="center">
-            <img src="scrapbook/perasconmanzanas.png" alt="Selector de hora" width="200"/>
+            <img src="scrapbook/PERASCONMANZANAS.png" alt="Selector de hora" width="200"/>
         </td>
     </tr>
     <tr>
