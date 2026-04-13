@@ -41,7 +41,6 @@ El proyecto utiliza el patrón MVVM (Model-View-ViewModel) para dividir la lógi
 2. ViewModel (NewsViewModel.kt)
 
 - Hereda de `ViewModel`.
-- Hereda de ViewModel .
 - Utiliza viewModelScope.launch para ejecutar las operaciones de red (a través del Repository) de forma asíncrona y segura (I/O).
 - Lógica de Red: Contiene el método fetchNews(query: String) que llama al repositorio para obtener los datos de la APINews.
 - Expone el estado de la aplicación a la Vista a través de LiveData : - articlesFeed : La lista de artículos de noticias para actualizar el RecyclerView . - isLoading : Estado booleano para mostrar/ocultar un indicador de progreso. - errorMsg : Mensaje de error para notificar al usuario sobre fallos de red o API.
