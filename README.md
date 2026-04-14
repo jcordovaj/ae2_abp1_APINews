@@ -1,4 +1,4 @@
-# 🚀 MOD6 AE2-ABP1: Pelotillehue News - (APIRest + Retrofit + MVVM)
+# 🚀 Desarrollo API - Android: Pelotillehue News - (APIRest + Retrofit + MVVM)
 
 <p float="center">
   <img src="scrapbook/perasconmanzanas_icon.png" alt="Logo" width="200"/>
